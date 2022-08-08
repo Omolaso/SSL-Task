@@ -47,19 +47,19 @@ span{
     flex: 0.6;
     flex-direction: column;
     justify-content: space-between;
-    background: skyblue;
-    border: 2px solid blue;
+    background: #ccc;
+    border: 2px solid lightslategray;
     min-height: 100vh;
     padding: 3rem;
 }
 
 .allSection .secondSection .text{
     text-align: center;
-    /* border: 1px solid; */
 }
 
 .allSection .secondSection .text h3{
-    color: royalblue;
+    color: rgb(21, 3, 121) ;
+    text-shadow: 0px 2px 2px black;
 }
 
 .allSection .secondSection .text #param{
@@ -67,12 +67,32 @@ span{
 }
 
 .allSection .secondSection .text #center{
-    /* opacity: 0.1 !important; */
-    color: rgba(0, 0, 0, 0.5) !important;
+    color: rgba(0, 0, 0, 0.3) !important;
 }
+
+.allSection .secondSection .make{
+    border-radius: 50px;
+    border: none;
+    /* text-align: center; */
+    font-size: 16px;
+    padding: 1rem 0rem;
+    background: rgb(86, 59, 236);
+    color: white;
+}
+
+
+/* MEDIA QUERY */
 
 @media screen and (max-width: 768px) {
     .allSection{
         flex-direction: column;
+    }
+
+    .allSection .firstSection #bill{
+        text-align: center;
+    }
+
+    .allSection .secondSection{
+        margin-bottom: 1.5rem;
     }
 }
